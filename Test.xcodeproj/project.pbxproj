@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A88B4012150DED900008A5E1 /* TKWaterfallsView.m in Sources */ = {isa = PBXBuildFile; fileRef = A88B4011150DED900008A5E1 /* TKWaterfallsView.m */; };
 		F49341271509AC9800D01C19 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F49341261509AC9800D01C19 /* UIKit.framework */; };
 		F49341291509AC9800D01C19 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F49341281509AC9800D01C19 /* Foundation.framework */; };
 		F493412B1509AC9800D01C19 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F493412A1509AC9800D01C19 /* CoreGraphics.framework */; };
@@ -16,10 +17,11 @@
 		F493413A1509AC9800D01C19 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = F49341381509AC9800D01C19 /* MainWindow.xib */; };
 		F493413D1509AC9800D01C19 /* TestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F493413C1509AC9800D01C19 /* TestViewController.m */; };
 		F49341401509AC9800D01C19 /* TestViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F493413E1509AC9800D01C19 /* TestViewController.xib */; };
-		F49341481509ACA800D01C19 /* TKWaterFlowView.m in Sources */ = {isa = PBXBuildFile; fileRef = F49341471509ACA800D01C19 /* TKWaterFlowView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A88B4010150DED900008A5E1 /* TKWaterfallsView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TKWaterfallsView.h; sourceTree = "<group>"; };
+		A88B4011150DED900008A5E1 /* TKWaterfallsView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TKWaterfallsView.m; sourceTree = "<group>"; };
 		F49341221509AC9800D01C19 /* Test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Test.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F49341261509AC9800D01C19 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		F49341281509AC9800D01C19 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -34,8 +36,6 @@
 		F493413B1509AC9800D01C19 /* TestViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestViewController.h; sourceTree = "<group>"; };
 		F493413C1509AC9800D01C19 /* TestViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestViewController.m; sourceTree = "<group>"; };
 		F493413F1509AC9800D01C19 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/TestViewController.xib; sourceTree = "<group>"; };
-		F49341461509ACA800D01C19 /* TKWaterFlowView.h */ = {isa = PBXFileReference; fileEncoding = 4; path = TKWaterFlowView.h; sourceTree = "<group>"; };
-		F49341471509ACA800D01C19 /* TKWaterFlowView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TKWaterFlowView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,10 +82,10 @@
 		F493412C1509AC9800D01C19 /* Test */ = {
 			isa = PBXGroup;
 			children = (
+				A88B4010150DED900008A5E1 /* TKWaterfallsView.h */,
+				A88B4011150DED900008A5E1 /* TKWaterfallsView.m */,
 				F49341351509AC9800D01C19 /* TestAppDelegate.h */,
 				F49341361509AC9800D01C19 /* TestAppDelegate.m */,
-				F49341461509ACA800D01C19 /* TKWaterFlowView.h */,
-				F49341471509ACA800D01C19 /* TKWaterFlowView.m */,
 				F49341381509AC9800D01C19 /* MainWindow.xib */,
 				F493413B1509AC9800D01C19 /* TestViewController.h */,
 				F493413C1509AC9800D01C19 /* TestViewController.m */,
@@ -169,7 +169,7 @@
 				F49341341509AC9800D01C19 /* main.m in Sources */,
 				F49341371509AC9800D01C19 /* TestAppDelegate.m in Sources */,
 				F493413D1509AC9800D01C19 /* TestViewController.m in Sources */,
-				F49341481509ACA800D01C19 /* TKWaterFlowView.m in Sources */,
+				A88B4012150DED900008A5E1 /* TKWaterfallsView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

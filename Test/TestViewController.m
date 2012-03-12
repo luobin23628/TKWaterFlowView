@@ -31,7 +31,7 @@
 {
     [super viewDidLoad];
     
-    TKWaterFlowView *view = [[TKWaterFlowView alloc] initWithFrame:CGRectMake(0, 0, 320, 460)];
+    TKWaterfallsView *view = [[TKWaterfallsView alloc] initWithFrame:CGRectMake(0, 0, 320, 460)];
     view.dataSource = self;
     view.delegate = self;
     [self.view addSubview:view];
@@ -51,16 +51,16 @@
     return (interfaceOrientation == UIInterfaceOrientationPortrait);
 }
 
-- (NSInteger)numberOfRowsInWaterFlowView:(TKWaterFlowView *)waterFlowView
+- (NSInteger)numberOfRowsInWaterfallsView:(TKWaterfallsView *)waterFlowView
 {
     return 100;
 }
 
-- (TKWaterFlowViewCell *)waterFlowView:(TKWaterFlowView *)waterFlowView cellAtIndex:(NSUInteger)index
+- (TKWaterfallsViewCell *)waterfallsView:(TKWaterfallsView *)waterfallsView cellAtIndex:(NSUInteger)index;
 {
-    TKWaterFlowViewCell *cell = [waterFlowView dequeueReusableCell];
+    TKWaterfallsViewCell *cell = [waterfallsView dequeueReusableCell];
     if (!cell) {
-        cell = [[[TKWaterFlowViewCell alloc] init] autorelease];
+        cell = [[[TKWaterfallsViewCell alloc] init] autorelease];
         UILabel *label = [[UILabel alloc] initWithFrame:CGRectMake(10, 5, 80, 20)];
         label.tag = 5;
         [cell addSubview:label];
@@ -71,7 +71,7 @@
     return cell;
 }
 
-- (CGFloat)waterFlowView:(TKWaterFlowView *)waterFlowView heightForCellAtIndex:(NSUInteger)index
+- (CGFloat)waterfallsView:(TKWaterfallsView *)waterfallsView heightForCellAtIndex:(NSUInteger)index
 {
     return arc4random()%20 + 50;
 }

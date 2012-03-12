@@ -7,9 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "TKWaterFlowView.h"
+#import "TKWaterfallsView.h"
 
-@interface TestViewController : UIViewController<TKWaterFlowViewDataSource, TKWaterFlowViewDelegate> {
+@interface TestViewController : UIViewController<TKWaterfallsViewDataSource, TKWaterfallsViewDelegate> {
     
 }
 
